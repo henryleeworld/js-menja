@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="切塊忍者" />
+        <meta property="og:description" content="嘗試通過切塊獲得最高分，挑戰自己可以撐多久，或在休閒模式中單純練習切塊技巧。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="css/menja.css" />
+        <title>切塊忍者</title>
+    </head>
+    <body>
+        <canvas id="c"></canvas>
+        <div class="hud">
+            <div class="hud__score">
+                <div class="score-lbl"></div>
+                <div class="cube-count-lbl"></div>
+            </div>
+            <div class="pause-btn"><div></div></div>
+            <div class="slowmo">
+                <div class="slowmo__bar"></div>
+            </div>
+        </div>
+        <div class="menus">
+            <div class="menu menu--main">
+                <h1>切塊忍者</h1>
+                <button type="button" class="play-normal-btn">開始遊戲</button>
+                <button type="button" class="play-casual-btn">休閒模式</button>
+            </div>
+            <div class="menu menu--pause">
+                <h1>暫停</h1>
+                <button type="button" class="resume-btn">繼續遊戲</button>
+                <button type="button" class="menu-btn--pause">主選單</button>
+            </div>
+            <div class="menu menu--score">
+                <h1>遊戲結束</h1>
+                <h2>您的分數：</h2>
+                <div class="final-score-lbl"></div>
+                <div class="high-score-lbl"></div>
+                <button type="button" class="play-again-btn">重新開始</button>
+                <button type="button" class="menu-btn--score">主選單</button>
+            </div>
+        </div>
+        <script src="js/menja.js" defer></script>
+    </body>
+</html>
